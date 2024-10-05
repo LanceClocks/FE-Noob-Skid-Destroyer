@@ -206,16 +206,6 @@ Players.PlayerAdded:Connect(function(player)
     end)
 end)
 
--- Main execution function to set up everything and move to ServerScriptService
-local function createAndExecuteServerScript()
-    -- Create a new script
-    local newScript = Instance.new("Script")
-    newScript.Name = "NoobSkidDestroyer"
-    newScript.Source = [[
-        -- The complete source code here (same as this script)
-        -- This script contains the server-side functionalities and abilities.
-    ]]
-    
     -- Parent the new script to ServerScriptService
     newScript.Parent = ServerScriptService
 
